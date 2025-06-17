@@ -10,9 +10,6 @@ export default function Component1({ text, theme, image }) {
           {" "}
           {theme}
         </div>
-        {/* <div className=" flex justify-center items-center bg-red-300 w-full ">
-          {text}
-        </div> */}
       </div>
     </>
   );
