@@ -16,7 +16,7 @@ export default function Header({ reference }) {
             Me
           </span>
         </div>
-        <div className="sm:flex gap-[10%] font-['Lexend_Deca'] text-[#9CA3AF] text-[1.3rem] font-bold hidden ">
+        <div className="sm:flex gap-[10%] font-['Lexend_Deca'] items-center text-[#9CA3AF] text-[1.3rem] font-bold hidden ">
           <div className="text-white">HOME</div>
 
           <div>

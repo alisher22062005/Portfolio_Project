@@ -7,15 +7,24 @@ export default function Card1() {
   const [text1, SetText1] = useState("");
   const [text2, SetText2] = useState("");
   const [text3, SetText3] = useState("");
+  const [text4, SetText4] = useState("");
+  const [text5, SetText5] = useState("");
+  const [text6, SetText6] = useState("");
 
   const [index1, setIndex1] = useState(0);
   const [index2, setIndex2] = useState(0);
   const [index3, setIndex3] = useState(0);
+  const [index4, setIndex4] = useState(0);
+  const [index5, setIndex5] = useState(0);
+  const [index6, setIndex6] = useState(0);
 
   const sample3 =
     "Hi, everyone! I'm beging my jorney as FRONTED-DEVELOPER, so looking forward to work with you.";
   const sample1 = "Hello, Welcome";
   const sample2 = "I'm Sharipov Alisher";
+  const sample4 = "Sharipov Alisher";
+  const sample5 = "Currently learning React & Tailwind.";
+  const sample6 = " Open for internships";
 
   const navigate = useNavigate();
 
@@ -53,6 +62,42 @@ export default function Card1() {
     }
   }, [text3, index2, index1, index3]);
 
+  useEffect(() => {
+    if (index1 == sample1.length) {
+      const timeout = setTimeout(() => {
+        if (index4 < sample4.length) {
+          SetText4((prev) => prev + sample4[index4]);
+          setIndex4((prev) => prev + 1);
+        }
+      }, 50);
+      return () => clearTimeout(timeout);
+    }
+  }, [index4, text1, text4]);
+
+  useEffect(() => {
+    if (index4 == sample4.length) {
+      const timeout = setTimeout(() => {
+        if (index5 < sample5.length) {
+          SetText5((prev) => prev + sample5[index5]);
+          setIndex5((prev) => prev + 1);
+        }
+      }, 50);
+      return () => clearTimeout(timeout);
+    }
+  }, [text4, index5, text5]);
+
+  useEffect(() => {
+    if (index5 == sample5.length) {
+      const timeout = setTimeout(() => {
+        if (index6 < sample6.length) {
+          SetText6((prev) => prev + sample6[index6]);
+          setIndex6((prev) => prev + 1);
+        }
+      }, 30);
+      return () => clearTimeout(timeout);
+    }
+  }, [text5, index6, text6]);
+
   return (
     <>
       <div className="flex pt-[16%] pl-[12%]  sm:bg-[#111827] font-[Lexend Deca] font-bold  pb-[10%] xs:flex-col sm:flex-row xs:gap-[2.5rem] sm:gap-[0] xs:bg-[#2E2E2E]  ">
@@ -62,19 +107,19 @@ export default function Card1() {
             {text2}
           </div>
           <div className="sm:hidden xs:text-[2.5rem] xs:font-bold xs:font-[Oswald] xs:leading-[2rem]">
-            Sharipov Alisher
+            {text4}
           </div>
-          <p className="max-w-[60%] tracking-widest leading-[2rem] text-[#6B7280] font-[Lexend Deca]   xs:hidden sm:block ">
+          <p className="max-w-[60%] tracking-widest leading-[2rem] text-[#6B7280] font-['Lexend_Deca']   xs:hidden sm:block ">
             {text3}
           </p>
           <div className="sm:hidden xs:flex xs:flex-col xs:w-full">
             <p className="sm:hidden xs:text-[1rem] sx:font-[Open Sans] xs:font-normal xs:max-w-[100%]">
               {" "}
-              Currently learning React & Tailwind.
+              {text5}
             </p>
 
             <p className="sm:hidden xs:text-[1rem] sx:font-[Open Sans] xs:font-normal xs:max-w-[80%]">
-              Open for internships
+              {text6}
             </p>
           </div>
 

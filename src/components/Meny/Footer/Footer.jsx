@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col-reverse">
-          <div className="flex gap-[20%]">
+          <div className="flex gap-[20%] ">
             <img src={img3}></img>
             <img src={img4}></img>
             <img src={img5}></img>
@@ -35,24 +35,30 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="w-full sm:hidden flex justify-center p-[10%] font-['Open_Sans'] font-black bg-[#2E2E2E] rounded-b-[1.5rem]">
+      <div className="w-full sm:hidden flex justify-center p-[10%] font-['Open_Sans'] font-black bg-[#2E2E2E] ">
         <div className="flex flex-col gap-[1rem]">
           <div className="text-[1.2rem] flex justify-center">
             Let's work together!
           </div>
-          <div className="text-[1.2rem]">
+          <div className="text-[1.2rem] flex gap-[3%]">
             <span className="text-[#DF0139]">Email:</span>
             shalisher2206@gmail.com
           </div>
-          <div className="text-[1.2rem] flex justify-center">
-            <span className="text-[#DF0139]">My number: </span> +7(708) 973 7816
+          <div className="text-[1.2rem] flex justify-evenly">
+            <span className="text-[#DF0139] ">My number: </span> +7(708) 973
+            7816
           </div>
-          <div className="flex gap-[10%] justify-center">
+          <div className="flex gap-[10%] justify-center ">
             <div>
-              <img src={linkedin}></img>
+              <a href="https://linkedin.com/in/alisher-sharipov-b1a26b35a">
+                {" "}
+                <img src={linkedin}></img>
+              </a>
             </div>
             <div>
-              <img src={gitHub}></img>
+              <a href="https://github.com/alisher22062005">
+                <img src={gitHub}></img>
+              </a>
             </div>
           </div>
         </div>

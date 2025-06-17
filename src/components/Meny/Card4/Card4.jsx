@@ -14,7 +14,7 @@ export default function Card4() {
   const [isDescription4, isSetDescription4] = useState(false);
 
   const description =
-    "Simple To Do List, Here we have made this project on React, used hookies such as UseState and Useeffect, additionally used Tailwind";
+    "Simple To Do List, Here we have made this project on React, used hookies such as UseState and UseEffect, additionally used Tailwind";
 
   const description2 =
     "News, we built this project without any framework, used html/css/js. Used API which allows to extract data from the server";
@@ -30,7 +30,7 @@ export default function Card4() {
       <div className="pt-[5%] flex flex-col items-center gap-[3rem]">
         <div className="text-[2rem] sm:font-['Lexend_Deca'] xs:font-['Oswald'] font-black">
           My{" "}
-          <span className="sm:text-[#EAB308] xs:text-[#DF0139] xs:font-['Oswald']">
+          <span className="sm:text-[#EAB308] xs:text-[#DF0139] sm:font-['Lexend_Deca']  xs:font-['Oswald']">
             PortFolio
           </span>
         </div>
@@ -38,7 +38,7 @@ export default function Card4() {
         {/* Description block */}
         <div className="relative w-full flex justify-center items-center">
           <div
-            className={`absolute top-0 z-10 max-w-[45%] px-4 py-2 rounded-[1rem] shadow-md text-center transition-all duration-500 ease-in-out transform bg-[#111827]
+            className={`absolute top-0 z-10 sm:max-w-[45%] xs:max-w-full px-4 py-2 rounded-[1rem] shadow-md text-center transition-all duration-500 ease-in-out transform bg-[#111827]
             ${
               isDescription ||
               isDescription2 ||

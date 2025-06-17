@@ -10,11 +10,11 @@ export default function Card2() {
             About{" "}
             <span className="sm:text-[#EAB308]  xs:text-[#DF0139]">Me</span>
           </div>
-          <p className="sm:max-w-[80%] tracking-widest leading-[1.8rem] text-[#6B7280] xs:max-w-[97%] xs:font-['Open_Sans'] xs:font-normal xs:text-[#E4E4E4]">
+          <p className="sm:max-w-[80%] tracking-widest leading-[1.8rem] text-[#6B7280] xs:max-w-[97%] xs:font-['Open_Sans'] xs:font-normal xs:text-[#E4E4E4] sm:font-['Lexend_Deca'] sm:text-[#6B7280] sm:font-bold">
             Hi, again! I'm FTONTEND DEVELOPER, about 20 years old. Currently
             study at KBTU in Almaty, Kazakhstan. <br></br> <br></br>Going to
             finish online Frontend course from nFactorial school, after I plan
-            to look for an internship. In addition I will show some projects of
+            to look for an internship. In addition, I will show some projects of
             mine to demonstrate my skills
           </p>
 

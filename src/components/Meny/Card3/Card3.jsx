@@ -45,7 +45,7 @@ export default function Card3() {
   return (
     <>
       <div className="flex flex-col pl-[10%] pt-[5%] gap-[2rem] pb-[10%] sm:bg-[#111827] xs:bg-[#2E2E2E]  ">
-        <div className="font-['Lexend_Deca'] text-[2rem] font-bold xs:flex xs:justify-center sx:w-full ">
+        <div className="font-['Lexend_Deca'] text-[2rem] font-bold xs:flex xs:justify-center sx:w-full sm:justify-start sm:ml-[2%] ">
           My{" "}
           <span className="sm:text-[#EAB308]  xs:text-[#DF0139] ">Skills</span>
         </div>
