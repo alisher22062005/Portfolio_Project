@@ -5,9 +5,9 @@ import screenshot2 from "../../../assets/Screenshot 2025-06-14 200013.png";
 import screenshot3 from "../../../assets/Screenshot 2025-06-14 195307.png";
 import screenshot4 from "../../../assets/Screenshot 2025-06-14 194909.png";
 import { useState } from "react";
-import { reference } from "three/tsl";
+// import { reference } from "three/tsl";
 
-export default function Card4() {
+export default function Card4({ reference }) {
   const [isDescription, isSetDescription] = useState(false);
   const [isDescription2, isSetDescription2] = useState(false);
   const [isDescription3, isSetDescription3] = useState(false);
@@ -57,7 +57,7 @@ export default function Card4() {
       </div>
 
       {/* Carousel */}
-      <div className="flex justify-center pt-[5%]">
+      <div ref={reference} className="flex justify-center pt-[5%]">
         <div className="carousel sm:w-[65%] sm:h-[60vh] rounded-[0.5rem] xs:h-[40vh] xs:w-[90%]">
           {/* Item 1 */}
           <div

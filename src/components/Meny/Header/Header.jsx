@@ -1,15 +1,12 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import img from "../../../assets/Vector (2).png";
+import MenuPopupState from "../../MaterialUI/MenuPopupState";
 
-export default function Header({ reference }) {
-  // const reference = useRef(null);
-  function handleClick() {
-    reference.current?.scrollIntoView({ behavior: "smooth" });
-  }
+export default function Header({ handleClick, handleMenuClick }) {
   return (
     <>
-      <div className="flex sm:p-[2%]  sm:gap-[50%] sm:bg-[#020617] text-[1.3rem] sticky top-[0px] xs:bg-[#1A1A1A] xs:gap-[40%] xs:p-[5%]">
+      <div className="flex sm:p-[2%]  sm:gap-[50%] sm:bg-[#020617] text-[1.3rem] sticky top-[0px] xs:bg-[#1A1A1A] xs:gap-[37%] xs:p-[5%]">
         <div className="sm:ml-[10%] text-white font-[1000] text-[1.7rem] xs:ml-[5%] ">
           About
           <span className="sm:text-[#EAB308] sm:font-[1000] sm:text-[1.7rem] xs:text-[#DF0139]  ">
@@ -26,10 +23,17 @@ export default function Header({ reference }) {
             </button>
           </div>
 
-          <div className="font-['Lexend_Deca'] ">PORTFOLIO</div>
+          <div onClick={handleClick} className="font-['Lexend_Deca'] ">
+            <button>PORTFOLIO</button>
+          </div>
         </div>
         <div className="sm:hidden xs:flex xs:items-center">
-          <img src={img}></img>
+          {/* <img src={img}></img> */}
+          <MenuPopupState
+            image={img}
+            handleClickPortfolio={handleClick}
+            handleMenuClick={handleMenuClick}
+          ></MenuPopupState>
         </div>
       </div>
     </>

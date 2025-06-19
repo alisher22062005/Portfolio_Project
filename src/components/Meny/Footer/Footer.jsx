@@ -25,8 +25,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col-reverse">
-          <div className="flex gap-[20%] ">
-            <img src={img3}></img>
+          <div className="flex gap-[15%] ">
+            <img src={img3} alt="Icon"></img>
+
             <img src={img4}></img>
             <img src={img5}></img>
             <img src={img6}></img>

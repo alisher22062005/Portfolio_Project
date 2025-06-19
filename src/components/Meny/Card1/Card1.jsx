@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import anime from "../../../assets/ChatGPT Image Jun 13, 2025, 05_31_11 PM.png";
 import { useNavigate } from "react-router-dom";
 import img from "../../../assets/Картинка.png";
-export default function Card1() {
+export default function Card1({ referenceMenu }) {
   const [text1, SetText1] = useState("");
   const [text2, SetText2] = useState("");
   const [text3, SetText3] = useState("");
@@ -100,7 +100,10 @@ export default function Card1() {
 
   return (
     <>
-      <div className="flex pt-[16%] pl-[12%]  sm:bg-[#111827] font-[Lexend Deca] font-bold  pb-[10%] xs:flex-col sm:flex-row xs:gap-[2.5rem] sm:gap-[0] xs:bg-[#2E2E2E]  ">
+      <div
+        ref={referenceMenu}
+        className="flex pt-[16%] pl-[12%]  sm:bg-[#111827] font-[Lexend Deca] font-bold  pb-[10%] xs:flex-col sm:flex-row xs:gap-[2.5rem] sm:gap-[0] xs:bg-[#2E2E2E]  "
+      >
         <div className="flex flex-col  gap-[1.5rem] justify-center xs:w-[95%] sm:w-[50%] ">
           <div className="sm:text-[#EAB308] xs:text-[#DF0139] ">{text1}</div>
           <div className="sm:text-[3rem] hidden text-white sm:flex xs:text-[1.5rem] ">

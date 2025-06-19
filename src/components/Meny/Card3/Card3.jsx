@@ -17,7 +17,7 @@ export default function Card3() {
   const theme2 = {
     theme: "React",
     image: frame1,
-    text: "Modern frontend frame work Creating dynamic components and working with props, hooks, and state",
+    text: "Modern frontend framework Creating dynamic components and working with props, hooks, and state",
   };
   const theme3 = {
     theme: "Tailwind/Daisy ",
