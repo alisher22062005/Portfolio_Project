@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <>
       <div
-        className="h-screen flex justify-center items-center font-[Inter] font-normal bg-base-300
+        className="h-screen flex justify-center items-center font-[Inter] font-normal bg-base-100
  "
       >
         <div className="flex flex-col  max-h-[70%] sm:w-[35%] xs:w-[80%]  rounded-[2rem]  bg-[#FDD469] p-[3%]  ">

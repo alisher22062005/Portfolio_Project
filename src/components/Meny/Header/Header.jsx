@@ -14,7 +14,9 @@ export default function Header({ handleClick, handleMenuClick }) {
           </span>
         </div>
         <div className="sm:flex gap-[10%] font-['Lexend_Deca'] items-center text-[#9CA3AF] text-[1.3rem] font-bold hidden ">
-          <div className="text-white">HOME</div>
+          <div onClick={handleMenuClick} className="text-white">
+            HOME
+          </div>
 
           <div>
             {" "}
