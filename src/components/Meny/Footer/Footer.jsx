@@ -9,6 +9,15 @@ import linkedin from "../../../assets/Icon 6.png";
 import gitHub from "../../../assets/Icon 4.png";
 
 export default function Footer() {
+  const handleClick3 = () => {
+    window.open("https://linkedin.com/in/alisher-sharipov-b1a26b35a");
+  };
+
+  const handleClick4 = () => {
+    window.open(
+      "https://www.instagram.com/sh_alishe1?igsh=MXRlMmN5amw1MnE2ZA=="
+    );
+  };
   return (
     <>
       <div className="pt-[1%] flex gap-[55%] bg-[#111827] pb-[2%] font-['Lexend_Deca'] xs:hidden sm:flex">
@@ -26,9 +35,11 @@ export default function Footer() {
         </div>
         <div className="flex flex-col-reverse">
           <div className="flex gap-[15%] ">
-            <img src={img3} alt="Icon"></img>
+            <img onClick={handleClick3} src={img3} alt="Icon"></img>
 
-            <img src={img4}></img>
+            {/* <img src={img3} alt="Icon"></img> */}
+
+            <img onClick={handleClick4} src={img4}></img>
             <img src={img5}></img>
             <img src={img6}></img>
             <img src={img2}></img>

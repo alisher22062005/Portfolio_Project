@@ -19,7 +19,7 @@ export default function Card1({ referenceMenu }) {
   const [index6, setIndex6] = useState(0);
 
   const sample3 =
-    "Hi, everyone! I'm beging my jorney as FRONTED-DEVELOPER, so looking forward to work with you.";
+    "Hi, everyone! I'm beging my jorney as Frontend developer, so looking forward to work with you.";
   const sample1 = "Hello, Welcome";
   const sample2 = "I'm Sharipov Alisher";
   const sample4 = "Sharipov Alisher";
